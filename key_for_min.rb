@@ -3,10 +3,10 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-smallest = 1000
+smallest = 0
 result = nil
 name_hash.each do |k, v|
-   if  v < smallest
+   if smallest == 0 || v < smallest
     smallest = v
      result = k
 # binding.pry
